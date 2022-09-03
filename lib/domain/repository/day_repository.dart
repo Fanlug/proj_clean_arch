@@ -1,7 +1,8 @@
-import '../models/day.dart';
+import '../model/day.dart';
 
 abstract class DayRepository {
-  Future<Day> geDay({
-    required double latitude, required double longitude
+  Future<Day>? getDay({
+    required double latitude,
+    required double longitude
   });
 }
