@@ -9,7 +9,7 @@ class ApiUtil {
 
   ApiUtil(this._sunriseService);
 
-  Future<Day>? getDay(
+  Future<Day> getDay(
       {required double latitude, required double longitude}) async {
     final body = GetDayBody(latitude: latitude, longitude: longitude);
     final result = await _sunriseService.getDay(body);

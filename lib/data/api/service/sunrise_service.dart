@@ -3,9 +3,9 @@ import 'package:proj_clean_arch/data/api/request/get_day_body.dart';
 import '../api_day.dart';
 
 class SunriseService {
-  static const _BASE_URL = "https://api.sunrise-sunset.org";
+  static const _baseUrl = "https://api.sunrise-sunset.org";
   final Dio _dio = Dio(
-    BaseOptions(baseUrl: _BASE_URL),
+    BaseOptions(baseUrl: _baseUrl),
   );
 
   Future<ApiDay> getDay(GetDayBody body)

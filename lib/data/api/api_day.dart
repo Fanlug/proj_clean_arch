@@ -1,8 +1,8 @@
 class ApiDay {
-  final DateTime sunrise;
-  final DateTime sunset;
-  final DateTime solarNoon;
-  final int dayLength;
+  final String sunrise;
+  final String sunset;
+  final String solarNoon;
+  final num dayLength;
 
   ApiDay.fromApi(Map<String, dynamic> map)
       : sunrise = map['results']['sunrise'],
